@@ -47,9 +47,9 @@ angular.module('starter.controllers', ['socialShareModule'])
       // If its one of the mock exams
       practiceExam = true;
 
-      if ($scope.showTimer) {
-        $scope.timer = 2400;  // 40 minutes for two practice exams
-      }
+//      if ($scope.showTimer) {
+//        $scope.timer = 2400;  // 40 minutes for two practice exams
+//      }
     
       // Show a warning modal first
       if (warned) {
@@ -57,6 +57,9 @@ angular.module('starter.controllers', ['socialShareModule'])
         $scope.timer = 2400;
         $scope.showTimer = true;
  
+        if (examTopic == 200) {
+            $scope.timer = 2700;  // 80 minutes for final exam
+          }
         if (examTopic == 300) {
           $scope.timer = 4800;  // 80 minutes for final exam
         }
@@ -66,6 +69,9 @@ angular.module('starter.controllers', ['socialShareModule'])
         if (examTopic == 300) {
              $scope.bigExam = 'big'; // the Warning modal differs for practice exam vs certification exam in title
         }
+        if (examTopic == 200) {
+            $scope.bigExam = 'preExam'; // the Warning modal differs for practice exam vs certification exam in title
+       }
 
         $ionicModal.fromTemplateUrl('templates/warningModal.html', {
           scope : $scope
