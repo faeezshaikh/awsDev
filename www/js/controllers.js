@@ -57,8 +57,8 @@ angular.module('starter.controllers', ['socialShareModule'])
         $scope.timer = 2400;
         $scope.showTimer = true;
  
-        if (examTopic == 200) {
-            $scope.timer = 2700;  // 80 minutes for final exam
+        if (examTopic == 100 || examTopic == 200) {
+            $scope.timer = 2700;  // 45 minutes for first two  exams
           }
         if (examTopic == 300) {
           $scope.timer = 4800;  // 80 minutes for final exam

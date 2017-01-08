@@ -307,6 +307,61 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "File Transfer Protocol", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Simple Network Management Protocol", "IsAnswer": false }]
         
+    },
+     {
+        "Id": 31,
+        "Name": "In order to retrieve multiple items from a DynamoDB table, which of the following API calls should be used?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "GetItems", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "BatchGetItems distribution", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "BatchGet", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "BatchGetItem", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 32,
+        "Name": "Creation of a new Autoscaling group is failing because the limit has reached. Which of the following commands can be used to determine if the Autoscaling group limit has been reached in a region?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "max-account-limits", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "describe-group-limits", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "aws autoscaling list-account-limits", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "aws autoscaling describe-account-limits", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 33,
+        "Name": "With regard to DynamoDB, when you create a table with a hash-and-range key _________________", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "You must define one or more Global secondary indexes on that table", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "You must define one or more Local secondary indexes on that table", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "You must define one or more secondary indexes on that table", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "You can optionally define one or more secondary indexes on that table", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 34,
+        "Name": "A user has created a new raw EBS volume. The user mounts the volume on the instance to which it is attached. Which of the below mentioned options is a required step before the user can mount the volume?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Run a cyclic check on the device for data consistency", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The user can directly mount the device without having to do anything else.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Resize the volume as per the original snapshot size", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Create a file system of the volume", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 35,
+        "Name": "You have a number of image files to encode. In an Amazon SQS worker queue, you create an Amazon SQS message for each file specifying the command (jpeg-encode) and the location of the file in Amazon S3. Which of the following statements best describes the functionality of Amazon SQS?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon SQS is a distributed queuing system that is optimized for horizontal scalability, not for single-threaded sending or receiving speeds.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon SQS is a distributed queuing system that is optimized for vertical scalability and for single-threaded sending or receiving speeds.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon SQS is for single-threaded sending or receiving speeds.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon SQS is a non-distributed queuing system.", "IsAnswer": false }]
+        
     }]
 }
 
