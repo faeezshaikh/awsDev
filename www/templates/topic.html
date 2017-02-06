@@ -1,4 +1,4 @@
-<ion-view view-title="Topics"> <ion-content>
+<ion-view view-title="Topics"> <ion-content delegate-handle="mainScroll">
 
 <hr />
 
@@ -24,6 +24,8 @@
             <div ng-repeat="question in filteredQuestions">
                 <div class="center label label-warning">Question {{currentPage}} of {{totalItems}}.</div>
                 <div class="item item-text-wrap item-divider ">{{currentPage}}. {{question.Name}}</div>
+                <!--<div ng-show="question.Image" class="item item-text-wrap item-divider ">{{currentPage}}. {{question.Image}}</div>-->
+                <img ng-show="question.Image" height="80" width="100%" ng-src="{{question.Image}}" />
 
                 <div class="item item-text-wrap col-100">
                     <div>
@@ -125,6 +127,7 @@
     <div ng-repeat="question in questions">
         <div class="result-question">
             <h3>{{$index + 1}}. {{question.Name}}</h3>
+            <img ng-show="question.Image" height="100%" width="100%" ng-src="{{question.Image}}" />
             <div class="result-options">
                 <div ng-repeat="Option in question.Options">
                     <label ng-click="onSelect(Option);" class="{{  Option.IsAnswer ? 'result-correct': 'result-incorrect' }}"> <input id="{{Option.Id}}" type="checkbox" disabled="disabled"

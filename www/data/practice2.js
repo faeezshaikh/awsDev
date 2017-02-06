@@ -339,6 +339,66 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "Migrate the database from MySQL to Aurora for better performance", "IsAnswer": true },
             { "Id": 1058, "QuestionId": 1010, "Name": "Place the RDS instances behind a secondary Auto Scaling Group", "IsAnswer": false },
             { "Id": 1059, "QuestionId": 1010, "Name": "Implement Elasticache to cache the most common queries and configure Magento to use this caching service", "IsAnswer": true }]
+    },
+     {
+        "Id": 36,
+        "Name": "Your team is excited about the use of AWS because now they have access to programmable infrastructure. You have been asked to manage your AWS infrastructure in a manner similar to the way you might manage application code. You want to be able to deploy exact copies of different versions of your infrastructure, stage changes into different environments, revert back to previous versions, and identify what versions are running at any particular time (Development, Test QA, Production). Which approach addresses this requirement?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use cost allocation reports and AWS Opsworks to deploy and manage your infrastructure.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use AWS CloudWatch metrics and alerts along with resource tagging to deploy and manage your infrastructure.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use AWS Beanstalk and a version control system like Git to deploy and manage your infrastructure.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use AWS CloudFormation and a version control system like Git to deploy and manage your infrastructure.", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 37,
+        "Name": "A photo sharing site is deployed in a VPC. An ELB distributes traffic across two subnets. The session stickiness on the ELB is configured to use the 'AWS-generated session cookie' with a session TTL of 5 minutes.The webserver Autoscaling group is configured as min-size=4, max-size=4. The site is preparing for a public launch by running a load-testing software installed on a single EC2 instance running in us-west-2a. After 60 minutes of load-testing the webserver logs show results below. (See table). What do you recommend to ensure load-testing HTTP requests are evenly distributed across the 4 webservers. (Choose 2 answers):", 
+        "Image": "data/img/ques1.jpg",
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Reconfigure the load-testing software to re-resolve DNS for each web request.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use a 3rd party load testing service that offers globally distributed test clients.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Configure ELB and Autoscaling to distribute acrosss us-west-2a and us-west-2c.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Configure ELB session stickiness to use the 'app-specific' session cookie.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Launch and load the load-tester EC2 instance from us-east-1 instead.", "IsAnswer": false }]
+        
+    },
+     {
+        "Id": 38,
+        "Name": "Which of the following are correct with respect to policy evaluation logic in AWS IAM? (Choose 2 answers)", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "An explicit deny does not override an explicit allow.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "By default all requests are allowed.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "An explicit allow overrides the default deny.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "An explicit allow overrides an explicit deny.", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "By default, all requests are denied", "IsAnswer": true }]
+        
+    },
+     {
+        "Id": 39,
+        "Name": "How will you secure data at rest on an EBS volume?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Write the data randomly instead of sequentially.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use an encrypted file system on top of the EBS volume.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Encrypt the volume using the S3 server-side encryption service.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Create an IAM policy that restricts read and write access to the volume.", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Attach the volume to an instance using EC2's SSL interface.", "IsAnswer": false }]
+        
+    },
+     {
+        "Id": 40,
+        "Name": "An application is storing hourly log files from thousands of instances from a high traffic website. Which naming scheme will give optimal performance on S3?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Sequential.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "HH-DD-MM-YYYY-log_instanceID", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "YYYY-MM-DD-HH-log_instanceID", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "instanceID_log-HH-DD-MM-YYYY.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "instanceID_log-YYYY-MM-DD-HH", "IsAnswer": false }]
+        
     }]
 }
 

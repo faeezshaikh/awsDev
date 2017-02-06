@@ -35,7 +35,13 @@ C:\Users\FSHAI\AppData\Local\Android\android-sdk\build-tools\23.0.1\zipalign -v 
 
 1. Start Android Virtual Device from AVD manager (either standalone or from android studio)
 
-2. Install the apk in the emulator using this command:
-~/Android/~platform-tools/adb install yourfile.apk
+2 While Genymotion is running, run 'sudo ionic run android'. This will install in Genymotion.
+  Choose 'Custom Phone' option in Genymotion
+
 
 3. For Screenshots, Android Studio --> DDMS --> Select emulator --> Camera icon.
+
+
+
+Not Necessary - Install the apk in the emulator using this command:
+/Users/faeezshaikh/Library/Android/sdk/platform-tools/adb install <yourfile.apk>
