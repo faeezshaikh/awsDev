@@ -45,21 +45,22 @@
     },
     {
         "Id": 5,
-        "Name": "Up to how many applications can you run with AWS Elastic Beanstalk?", 
+        "Name": "With AWS Elastic Beanstalk it is possible to access the application logs without logging into the app servers.", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "1", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "25", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "100", "IsAnswer": false}]
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }] 
     },
     {
         "Id": 6,
-        "Name": "How many application versions can you run in ElasticBeanstalk?", 
+        "Name": "Which of the following AWS services does NOT provide the user root/admin access to the Operating system?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "200", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "20", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "500", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Elastic Beanstalk", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Elatic MapReduce", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS OpsWorks", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS EC2", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "AWS Lambda", "IsAnswer": true }]
         
     },
     {

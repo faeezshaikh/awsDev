@@ -362,6 +362,17 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "Amazon SQS is for single-threaded sending or receiving speeds.", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Amazon SQS is a non-distributed queuing system.", "IsAnswer": false }]
         
+    },
+     {
+        "Id": 36,
+        "Name": "An organization's security policy requires multiple copies of all critical data to be replicated across at least a primary and backup data center. The organization has decided to store some critical data on Amazon S3. Which option should you implement to ensure this requirement is met?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use the S3 copy API to replicate data between two S3 buckets in different regions.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "You do not need to implement anything since S3 data is automatically replicated between regions.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use the S3 copy API to replicate data between two S3 buckets in different facilities within an AWS Region.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "You do not need to implement anything since S3 data is automatically replicated between multiple facilities within an AWS Region ", "IsAnswer": true }]
+        
     }]
 }
 
