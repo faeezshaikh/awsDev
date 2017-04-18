@@ -138,6 +138,8 @@
             </h4>
             <p></p>
             <button class="button  {{ isCorrect(question) == 'Correct'? 'button-balanced': 'button-assertive'}}">{{isCorrect(question)}} answer.</button>
+            <button ng-show="question.Explanation" ng-click="showExplanation(question.Explanation,question.Ref,quiz.Id)" class="button button-positive">Explanation</button>
+
 
         </div>
     </div>

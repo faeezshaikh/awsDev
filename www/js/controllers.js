@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['socialShareModule'])
 
-  .controller('AppCtrl', function ($scope, $stateParams, $state, $http, helperService, $ionicModal, localStorageService, awsService, $rootScope, topicMap, shareService, $ionicScrollDelegate) {
+  .controller('AppCtrl', function ($scope, $stateParams, $state, $http, helperService, $ionicModal, localStorageService, awsService, $rootScope, topicMap, shareService, $ionicScrollDelegate,$window) {
 
   var warned = false;
   var practiceExam = false;
@@ -271,6 +271,41 @@ angular.module('starter.controllers', ['socialShareModule'])
     awsService.updateScoreForTopics(examTopic, $scope.score);
     $scope.mode.value = 'result';
   }
+
+  	////////// Explanation Feature Starts   /////////
+		$scope.showExplanation = function (expl, reference, topicId) {
+			$scope.explantion = expl;
+			$scope.ref = "'" + reference + "'";
+			$scope.explanationTopic = topicId;
+			$ionicModal.fromTemplateUrl('templates/explanationModal.html', {
+				scope: $scope
+			}).then(function (modal) {
+				$scope.explModal = modal;
+				$scope.explModal.show();
+			});
+		}
+		$scope.closeExplanation = function (topicId) {
+			$scope.explModal.hide();
+			console.log('closing');
+
+      // NA Since No Chat in Dev App!
+			/*  After opening a new window from the explanation modal, 
+		 			when you hit 'Close' the location changes to the chat home screen, 
+		 			so forcing it to go back to the topics results page */
+			// $window.location.href = "#/app/topics/" + topicId;
+
+		}
+		$scope.openLink = function (link) {
+			$window.open(link, '_system', 'location=yes');
+      // window.open(link, '_blank', 'location=yes');
+			return false;
+
+      // Make sure to install inappbrowser plugin
+      // cordova plugin add cordova-plugin-inappbrowser
+
+      /// Also while testing from 'Ionic View' link may not open in a NEW Window. Test natively.
+		}
+		///////// Explanation Feature Ends  //////////
   
   $scope.shareFb = function() {
 		shareService.shareOnFb();

@@ -373,6 +373,31 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "Use the S3 copy API to replicate data between two S3 buckets in different facilities within an AWS Region.", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "You do not need to implement anything since S3 data is automatically replicated between multiple facilities within an AWS Region ", "IsAnswer": true }]
         
+    },
+     {
+        "Id": 37,
+        "Name": "A user plans to use RDS as a managed DB platform. Which of the below mentioned features is not supported by RDS?", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Automated backup.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Automated scaling to manage a higher load.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Automated failure detection and recovery.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Automated software patching", "IsAnswer": false }],
+        "Explanation": "AWS RDS provides a managed DB platform, which offers features, such as automated backup, patch management, automated failure detection and recovery. The scaling is not automated and the user needs to plan it with a few clicks.",
+        "Ref" : "http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+        
+    },
+     {
+        "Id": 38,
+        "Name": "A user has not enabled versioning on an S3 bucket. What will be the version ID of the object inside that bucket??", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "0", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "There will be no version attached", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Null", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Blank", "IsAnswer": false }],
+        "Explanation": "S3 objects stored in the bucket before the user has set the versioning state have a version ID of Null. When the user enables versioning, the objects in the bucket do not change and their ID remains Null.",
+        "Ref": "http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.html"
     }]
 }
 
