@@ -389,7 +389,7 @@
     },
      {
         "Id": 38,
-        "Name": "A user has not enabled versioning on an S3 bucket. What will be the version ID of the object inside that bucket??", 
+        "Name": "A user has not enabled versioning on an S3 bucket. What will be the version ID of the object inside that bucket?", 
         
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "0", "IsAnswer": false },
@@ -398,6 +398,19 @@
             { "Id": 1058, "QuestionId": 1010, "Name": "Blank", "IsAnswer": false }],
         "Explanation": "S3 objects stored in the bucket before the user has set the versioning state have a version ID of Null. When the user enables versioning, the objects in the bucket do not change and their ID remains Null.",
         "Ref": "http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.html"
+    },
+     {
+        "Id": 39,
+        "Name": "PetStore Inc. is currently hosting their corporate site in an Amazon S3 bucket with Static Website Hosting enabled. Currently, when visitors go to http://www.mypetstore.com the index.html page is returned. PetStore Inc. now would like a new page welcome.html to be returned when a visitor enters http://www.mypetstore.com in the browser. Which of the following steps will allow PetStore Inc. to meet this requirement? Choose 2 answers", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Upload an html page named welcome.html to their S3 bucket", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Create a welcome subfolder in their S3 bucket", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Set the Index Document property to welcome.html", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Move the index.html page to a welcome subfolder", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Set the Error Document property to welcome.html", "IsAnswer": false }],
+        "Explanation": "The other options are wrong. Subfolders and (or) Error document will not allow you to upload a new welcome page for a static website hosted in S3.",
+        "Ref": "http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html"
     }]
 }
 
