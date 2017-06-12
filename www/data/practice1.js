@@ -411,6 +411,18 @@
             { "Id": 1059, "QuestionId": 1010, "Name": "Set the Error Document property to welcome.html", "IsAnswer": false }],
         "Explanation": "The other options are wrong. Subfolders and (or) Error document will not allow you to upload a new welcome page for a static website hosted in S3.",
         "Ref": "http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html"
+    },
+     {
+        "Id": 40,
+        "Name": "You are providing AWS consulting services for a company developing a new mobile application that will be leveraging Amazon SNS Mobile Push for push notifications. In order to send direct notification messages to individual devices each device registration identifier or token needs to be registered with SNS; however the developers are not sure of the best way to do this. You advise them to:", 
+        
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Call the CreatePlatformEndPoint API function to register multiple device tokens.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Bulk upload the device tokens contained in a CSV file via the AWS Management Console.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Let the push notification service (e.g. Amazon Device Messaging) handle the registration.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Implement a token vending service to handle the registration.", "IsAnswer": false }],
+        "Explanation": "Call the CreatePlatformEndPoint API.",
+        "Ref": "http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-devicetoken.html"
     }]
 }
 
