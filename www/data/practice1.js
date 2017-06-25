@@ -423,6 +423,19 @@
             { "Id": 1058, "QuestionId": 1010, "Name": "Implement a token vending service to handle the registration.", "IsAnswer": false }],
         "Explanation": "Call the CreatePlatformEndPoint API.",
         "Ref": "http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-devicetoken.html"
+    },
+    {
+        "Id": 41,
+        "Name": "Which of the following statements about SWF are true? Choose 3 answers", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "SWF uses deciders and workers to complete tasks", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SWF requires at least 1 EC2 instance per domain", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "SWF triggers SNS notifications on task assignment", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "SWF requires an S3 bucket for workflow storage", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "SWF tasks are assigned once and never duplicated", "IsAnswer": true },
+            { "Id": 1060, "QuestionId": 1010, "Name": "SWF workflow executions can last up to a year", "IsAnswer": true }] ,
+        "Explanation": "SWF does not require an S3 bucket for workflow storage and SWF does not automatically trigger SNS notifications on task assignment.",
+        "Ref": "https://aws.amazon.com/swf/faqs/"
     }]
 }
 
