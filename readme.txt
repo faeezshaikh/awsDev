@@ -19,13 +19,13 @@ Update version in config.xml
 
 sudo cordova build --release android
 
-rm *.apk
-cp /Users/faeezshaikh/git/awsQuiz/platforms/android/build/outputs/apk/android-release-unsigned.apk .
 
 (Optional step - Already generated - do not lose - If Key not already present)
 keytool -genkey -v -keystore  awsArch-key.keystore -alias awsArch- -keyalg RSA -keysize 2048 -validity 100000
 
 
+rm *.apk
+cp /Users/faeezshaikh/git/awsQuiz/platforms/android/build/outputs/apk/android-release-unsigned.apk .
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore aws-release1-key.keystore android-release-unsigned.apk aws-release1-alias
 
 C:\Users\FSHAI\AppData\Local\Android\android-sdk\build-tools\23.0.1\zipalign -v 4 android-release-unsigned.apk AWS-Dev.apk
