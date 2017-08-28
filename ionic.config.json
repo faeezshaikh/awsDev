@@ -1,4 +1,9 @@
 {
   "name": "AWS-Dev",
-  "app_id": "12b8966b"
+  "app_id": "12b8966b",
+  "type": "ionic1",
+  "integrations": {
+    "cordova": {}
+  },
+  "watchPatterns": []
 }

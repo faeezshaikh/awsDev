@@ -399,6 +399,16 @@
             { "Id": 1058, "QuestionId": 1010, "Name": "instanceID_log-HH-DD-MM-YYYY.", "IsAnswer": true },
             { "Id": 1059, "QuestionId": 1010, "Name": "instanceID_log-YYYY-MM-DD-HH", "IsAnswer": false }]
         
-    }]
+    },
+    {
+       "Id": 41,
+       "Name": "After launching an instance that you intend to serve as a NAT (Network Address Translation) device in a public subnet you modify your route tables to have the NAT device be the target of internet bound traffic of your private subnet. When you try and make an outbound connection to the Internet from an instance in the private subnet, you are not successful. Which of the following steps could resolve the issue?", 
+       "Options": [
+           { "Id": 1055, "QuestionId": 1010, "Name": "Attaching a second Elastic Network interface (ENI) to the NAT instance, and placing it in the private subnet", "IsAnswer": false },
+           { "Id": 1056, "QuestionId": 1010, "Name": "Attaching a second Elastic Network Interface (ENI) to the instance in the private subnet, and placing it in the public subnet", "IsAnswer": false },
+           { "Id": 1057, "QuestionId": 1010, "Name": "Disabling the Source/Destination Check attribute on the NAT instance", "IsAnswer": true },
+           { "Id": 1058, "QuestionId": 1010, "Name": "Attaching an Elastic IP address to the instance in the private subnet", "IsAnswer": false }]
+       
+   }]
 }
 
