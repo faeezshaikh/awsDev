@@ -436,6 +436,16 @@
             { "Id": 1060, "QuestionId": 1010, "Name": "SWF workflow executions can last up to a year", "IsAnswer": true }] ,
         "Explanation": "SWF does not require an S3 bucket for workflow storage and SWF does not automatically trigger SNS notifications on task assignment.",
         "Ref": "https://aws.amazon.com/swf/faqs/"
+    },
+    {
+        "Id": 42,
+        "Name": "You have enabled Elastic Load Balancing HTTP health checking. After looking at the AWS Management Console, you see that all instances are passing health checks, but your customers are reporting that your site is not responding. What could be the cause?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "The HTTP health checking system is misreporting due to latency in inter-instance metadata synchronization.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The health check in place is not sufficiently evaluating the application function.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The application is returning a positive health check too quickly for the AWS Management Console to respond.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Latency in DNS resolution is interfering with Amazon EC2 metadata retrieval.", "IsAnswer": false }] ,
+        "Explanation": "This is a common occurence if the ELB is not configured correctly to monitor the application adequately. Typically this can be done by pointing the ELB to health check on the app home page where users are expected to visit the most."
     }]
 }
 
