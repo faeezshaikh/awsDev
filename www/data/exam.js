@@ -607,7 +607,16 @@
            { "Id": 1056, "QuestionId": 1010, "Name": "Configure S3 bucket tags with your AWS access keys for your bucket hosing your website so that the application can query them for access.", "IsAnswer": false},
            { "Id": 1057, "QuestionId": 1010, "Name": "Configure a web identity federation role within IAM to enable access to the correct DynamoDB resources and retrieve temporary credentials.", "IsAnswer": true},
            { "Id": 1058, "QuestionId": 1010, "Name": "Store AWS keys in global variables within your application and configure the application to use these credentials when making requests.", "IsAnswer": false}]
-   }
+   },
+   {
+      "Id": 62,
+     "Name": "From a compliance and security perspective, which of these statements is true?", 
+      "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "You do not ever need to rotate access keys for AWS IAM Users.", "IsAnswer": false},
+          { "Id": 1056, "QuestionId": 1010, "Name": "You do not ever need to rotate access keys for AWS IAM Roles, nor AWS IAM Users.", "IsAnswer": false},
+          { "Id": 1057, "QuestionId": 1010, "Name": "You do not ever need to rotate access keys for AWS IAM Roles.", "IsAnswer": true},
+          { "Id": 1058, "QuestionId": 1010, "Name": "None of the other statements are true.", "IsAnswer": false}]
+  }
     ]
 }
 
